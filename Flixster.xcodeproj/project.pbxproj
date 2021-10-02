@@ -18,9 +18,12 @@
 		EE36D4EB26FC09FC00E0AA88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE36D4E926FC09FC00E0AA88 /* LaunchScreen.storyboard */; };
 		EE36D4F626FC09FC00E0AA88 /* FlixsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36D4F526FC09FC00E0AA88 /* FlixsterTests.swift */; };
 		EE36D50126FC09FC00E0AA88 /* FlixsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36D50026FC09FC00E0AA88 /* FlixsterUITests.swift */; };
+		EEA708642706A82000666EAC /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA708632706A82000666EAC /* MovieDetailsViewController.swift */; };
+		EEA708662706B77800666EAC /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA708652706B77800666EAC /* MovieGridViewController.swift */; };
+		EEA708682706BC2600666EAC /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA708672706BC2600666EAC /* MovieGridCell.swift */; };
 		EEC4B53B26FD6EE400C6B440 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4B53A26FD6EE400C6B440 /* MoviesViewController.swift */; };
 		EEC4B53D26FD72D600C6B440 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4B53C26FD72D600C6B440 /* MovieCell.swift */; };
-		EEC4B54026FD787400C6B440 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = EEC4B53F26FD787400C6B440 /* SwiftPackageProductDependency */; };
+		EEC4B54026FD787400C6B440 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = EEC4B53F26FD787400C6B440 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		EE36D4FC26FC09FC00E0AA88 /* FlixsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE36D50026FC09FC00E0AA88 /* FlixsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixsterUITests.swift; sourceTree = "<group>"; };
 		EE36D50226FC09FC00E0AA88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEA708632706A82000666EAC /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		EEA708652706B77800666EAC /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		EEA708672706BC2600666EAC /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 		EEC4B53A26FD6EE400C6B440 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		EEC4B53C26FD72D600C6B440 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEC4B54026FD787400C6B440 /* BuildFile in Frameworks */,
+				EEC4B54026FD787400C6B440 /* AlamofireImage in Frameworks */,
 				E7321F7306C76206960604C8 /* Pods_Flixster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +113,6 @@
 				00740D8AFE056A1E09FC57D6 /* Pods-FlixsterTests.debug.xcconfig */,
 				84416722B0B37DF9031737E8 /* Pods-FlixsterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,7 +154,10 @@
 				EE36D4DB26FC09FA00E0AA88 /* AppDelegate.swift */,
 				EE36D4DD26FC09FA00E0AA88 /* SceneDelegate.swift */,
 				EEC4B53A26FD6EE400C6B440 /* MoviesViewController.swift */,
+				EEA708652706B77800666EAC /* MovieGridViewController.swift */,
+				EEA708632706A82000666EAC /* MovieDetailsViewController.swift */,
 				EEC4B53C26FD72D600C6B440 /* MovieCell.swift */,
+				EEA708672706BC2600666EAC /* MovieGridCell.swift */,
 				EE36D4E126FC09FA00E0AA88 /* Main.storyboard */,
 				EE36D4E726FC09FC00E0AA88 /* Assets.xcassets */,
 				EE36D4E926FC09FC00E0AA88 /* LaunchScreen.storyboard */,
@@ -196,7 +204,7 @@
 			);
 			name = Flixster;
 			packageProductDependencies = (
-				EEC4B53F26FD787400C6B440 /* SwiftPackageProductDependency */,
+				EEC4B53F26FD787400C6B440 /* AlamofireImage */,
 			);
 			productName = Flixster;
 			productReference = EE36D4D826FC09FA00E0AA88 /* Flixster.app */;
@@ -273,7 +281,7 @@
 			);
 			mainGroup = EE36D4CF26FC09FA00E0AA88;
 			packageReferences = (
-				EEC4B53E26FD787400C6B440 /* RemoteSwiftPackageReference */,
+				EEC4B53E26FD787400C6B440 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = EE36D4D926FC09FA00E0AA88 /* Products */;
 			projectDirPath = "";
@@ -423,6 +431,9 @@
 			files = (
 				EEC4B53B26FD6EE400C6B440 /* MoviesViewController.swift in Sources */,
 				EE36D4DC26FC09FA00E0AA88 /* AppDelegate.swift in Sources */,
+				EEA708642706A82000666EAC /* MovieDetailsViewController.swift in Sources */,
+				EEA708662706B77800666EAC /* MovieGridViewController.swift in Sources */,
+				EEA708682706BC2600666EAC /* MovieGridCell.swift in Sources */,
 				EE36D4E626FC09FA00E0AA88 /* Flixster.xcdatamodeld in Sources */,
 				EEC4B53D26FD72D600C6B440 /* MovieCell.swift in Sources */,
 				EE36D4DE26FC09FA00E0AA88 /* SceneDelegate.swift in Sources */,
@@ -766,7 +777,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EEC4B53E26FD787400C6B440 /* RemoteSwiftPackageReference */ = {
+		EEC4B53E26FD787400C6B440 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
 			requirement = {
@@ -777,9 +788,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EEC4B53F26FD787400C6B440 /* SwiftPackageProductDependency */ = {
+		EEC4B53F26FD787400C6B440 /* AlamofireImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EEC4B53E26FD787400C6B440 /* RemoteSwiftPackageReference */;
+			package = EEC4B53E26FD787400C6B440 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
 			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
