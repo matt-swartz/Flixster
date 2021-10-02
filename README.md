@@ -37,7 +37,7 @@ Only problem I faced was the extension side for the posters in the collection vi
 
 ### App Walkthrough GIF
 
-<img src="https://i.imgur.com/PVj8uJ6.gif" width=250><br>
+<!--> <img src="https://i.imgur.com/PVj8uJ6.gif" width=250><br> -->
 
 ### Notes
 Had some trouble making the MovieViewController, did not do a cocoa touch class at first. Poster URL was not working at first until changed from "http" to "https"
