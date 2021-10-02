@@ -16,7 +16,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough GIF
 
-<img src="https://i.imgur.com/ShcgiaO.gif" width=250><br>
+<img src="https://i.imgur.com/GlGsdUu.gif" width=250><br>
 
 ### Notes
 Only problem I faced was the extension side for the posters in the collection view. The similar method from API was a little weird too. 
@@ -36,6 +36,7 @@ Only problem I faced was the extension side for the posters in the collection vi
 - [ ] (1pt) Run your app on a real device.
 
 ### App Walkthrough GIF
+
 
 
 ### Notes
